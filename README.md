@@ -13,7 +13,7 @@ POMDPs model decision-making under uncertainty where the agent cannot directly o
 - **Efficiency:** Fast inference for real-time applications
 - **Scalability:** Handle larger state/observation spaces
 
-## 📖 Why This Project Uses Analogies
+##  Why This Project Uses Analogies
 
 Neural POMDPs combine abstract mathematical concepts (belief states, policy gradients, partial observability) that can be difficult to grasp. This project intentionally uses **consistent analogies throughout the codebase** to make these concepts accessible without sacrificing technical rigor.
 
@@ -94,33 +94,33 @@ julia --project=. examples/visualize_policy.jl
          │                                      │
          │ observation                          │
          ▼                                      │
-    ┌─────────┐                                │
-    │ Belief  │                                │
-    │ Updater │                                │
-    └─────────┘                                │
+    ┌─────────┐                                 │
+    │ Belief  │                                 │
+    │ Updater │                                 │
+    └─────────┘                                 │
          │                                      │
          │ belief state                         │
          │ (probability                         │
          │  distribution)                       │
          ▼                                      ▼
     ┌──────────────────────────────────────────────────┐
-    │              Belief Encoder                       │
-    │  ┌────────┐   ┌────────┐   ┌────────┐           │
-    │  │ Dense  │ → │ Dense  │ → │ Dense  │           │
-    │  │  64    │   │  32    │   │  16    │           │
-    │  │ (ReLU) │   │ (ReLU) │   │(linear)│           │
-    │  └────────┘   └────────┘   └────────┘           │
+    │              Belief Encoder                      │
+    │  ┌────────┐   ┌────────┐   ┌────────┐            │
+    │  │ Dense  │ → │ Dense  │ → │ Dense  │            │
+    │  │  64    │   │  32    │   │  16    │            │
+    │  │ (ReLU) │   │ (ReLU) │   │(linear)│            │
+    │  └────────┘   └────────┘   └────────┘            │
     └──────────────────────────────────────────────────┘
          │
          │ embedding (16-dim)
          ▼
     ┌──────────────────────────────────────────────────┐
-    │             Policy Network                        │
-    │  ┌────────┐   ┌────────┐   ┌────────┐           │
-    │  │ Dense  │ → │ Dense  │ → │ Dense  │           │
-    │  │  32    │   │  16    │   │ n_act  │           │
-    │  │ (ReLU) │   │ (ReLU) │   │(softmax)│          │
-    │  └────────┘   └────────┘   └────────┘           │
+    │             Policy Network                       │
+    │  ┌────────┐   ┌────────┐   ┌────────┐            │
+    │  │ Dense  │ → │ Dense  │ → │ Dense  │            │
+    │  │  32    │   │  16    │   │ n_act  │            │
+    │  │ (ReLU) │   │ (ReLU) │   │(softmax)│           │
+    │  └────────┘   └────────┘   └────────┘            │
     └──────────────────────────────────────────────────┘
          │
          │ action probabilities
@@ -219,7 +219,7 @@ Episode Collection          Experience Replay         Policy Update
 
 **Type conversion debugging revealed Julia ecosystem reality**: Small developer base leads to inconsistent type conventions (Float32 vs Float64, Symbol vs Int). Explicit conversions at library boundaries are essential for production code.
 
-**Inline analogies work for human cognition**: Initially seemed "overkill" but proved essential when attention faded during code review. Humans need cognitive anchors at the point of confusion, not in external glossaries. Optimizing for narrative flow > organizational elegance.
+**Inline analogies work for human cognition**: Initially seemed "overkill" but proved essential when attention faded during code review. Programmers, Vibecoders and Laymens alike, need cognitive anchors at the point of confusion, not in external glossaries. Optimizing for narrative flow > organizational elegance. This ensures that anyone accessing the project, can always understand the intent of each function/struct while interacting with the codebase.
 
 **Hybrid symbolic/neural is the sweet spot**: Pure neural approaches ignore POMDP structure. Pure symbolic methods don't scale. Leveraging belief states while using neural networks for approximation combines mathematical rigor with practical scalability.
 
