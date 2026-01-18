@@ -1,0 +1,29 @@
+name = "NeuralPOMDPPolicy"
+uuid = "8b9e4c2a-1234-5678-9abc-def012345678"
+authors = ["Avery Watts <nagarake@yahoo.com>"]
+version = "1.0.0"
+
+[deps]
+BSON = "fbb218c0-5317-5bc6-957e-2ee96dd4b1f0"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+POMDPs = "a93abf59-7444-517b-a68a-c42f96afdd7d"
+POMDPTools = "7588e00f-9cae-40de-98dc-e0c70c48cdd7"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+
+[compat]
+BSON = "0.3"
+DataStructures = "0.18, 0.19"
+Distributions = "0.25"
+Flux = "0.14"
+POMDPs = "0.9"
+POMDPTools = "0.1"
+Plots = "1.40"
+StatsBase = "0.34"
+julia = "1.9"

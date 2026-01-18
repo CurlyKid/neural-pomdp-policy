@@ -1,0 +1,55 @@
+# Julia
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+Manifest.toml
+
+# Results and outputs
+results/
+# plots/ - KEEP plots for portfolio visualization
+# *.png - KEEP PNG diagrams for GitHub display
+*.pdf
+*.svg
+
+# Models
+models/
+*.bson
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Development/internal documentation (not for public GitHub)
+DEPLOYMENT_READY.md
+DIAGRAM_CONVERSION_GUIDE.md
+FINAL_STATUS.md
+GITHUB_SETUP.md
+OLLAMA_TRIUNE_FEEDBACK.md
+PROJECT_COMPLETION.md
+PROJECT_SPEC.md
+PROJECT_STATUS.md
+QUICK_WINS_COMPLETE.md
+READY_TO_PUSH.md
+TEST_STATUS.md
+DEBUGGING_SUMMARY.md
+HEXAGONAL_ARCHITECTURE_ANALYSIS.md
+POLISH_COMPLETE.md
+TEST_SUMMARY.md
+ZYGOTE_ERROR_EXPLANATION.md
+cogito_response.txt
+ollama_consultation.txt
+test_episode_debug.jl
+test_mermaid.md
+add_deps.jl
+dev_package.jl
