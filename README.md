@@ -86,7 +86,7 @@ julia --project=. examples/visualize_policy.jl
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     Neural POMDP Policy                          │
+│                     Neural POMDP Policy                         │
 └─────────────────────────────────────────────────────────────────┘
 
     POMDP Environment                    Neural Policy
