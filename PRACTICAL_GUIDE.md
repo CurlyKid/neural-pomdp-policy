@@ -71,7 +71,7 @@ Think of it like teaching a student to make decisions:
 
 **Analogy**: Like practicing a sport - you try different techniques, remember what worked, and gradually get better.
 
-## 🎮 Concrete Example: Tiger Problem
+##  Concrete Example: Tiger Problem
 
 ### The Scenario
 
@@ -177,7 +177,7 @@ This is exactly what a human would do!
 3. **Scalability**: Can handle larger problems where classical solvers fail
 4. **Sample Efficiency**: Learns from ~1000-5000 episodes (reasonable)
 
-## 🛠️ How to Use It
+##  How to Use It
 
 ### Basic Usage
 
@@ -239,7 +239,7 @@ policy = train_neural_policy(
 )
 ```
 
-## 🎓 When to Use This vs. Classical Solvers
+##  When to Use This vs. Classical Solvers
 
 ### Use Neural POMDP Policy When:
 
@@ -257,7 +257,7 @@ policy = train_neural_policy(
 ✅ **Offline planning**: Can spend minutes computing policy  
 ✅ **Safety-critical**: Need formal verification  
 
-## 🔬 Technical Details (For Interviews)
+##  Technical Details (For Interviews)
 
 ### Architecture Choices
 
